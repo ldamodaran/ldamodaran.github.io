@@ -1,0 +1,44 @@
+---
+title: "Lambodhar Damodaran"
+pagetitle: "Lambodhar Damodaran"
+---
+
+::: {.subtitle}
+Postdoctoral Fellow · Department of Biology, Emory University
+:::
+
+::: {.lede}
+I develop and apply computational methods to understand how pathogens generate
+genetic diversity, move between host species, and spread through populations.
+:::
+
+I am currently a postdoctoral fellow in the Katia Koelle lab at Emory
+University. Before that I was a postdoc with Louise Moncla at the University of
+Pennsylvania School of Veterinary Medicine, and I completed my PhD in
+bioinformatics at the University of Georgia with Justin Bahl, as an NSF NRT
+fellow in Interdisciplinary Disease Ecology Across Scales.
+
+## Research interests
+
+- Phylodynamics and scalable Bayesian inference for genomic surveillance
+- Reassortment and diversification in segmented viruses
+- Multi-host transmission and spillover, particularly avian influenza H5N1
+- Within-host viral evolution in prolonged and chronic infections
+- Antigenic evolution of seasonal influenza
+
+## Teaching
+
+I lecture on phylogenetics, phylodynamics, and molecular epidemiology, for
+audiences ranging from undergraduates to practicing public health scientists. I
+think understanding the theory behind a method makes for better application and
+troubleshooting, so I write practical material that lets students test what
+they have just heard in lecture rather than only read about it. Those materials
+are collected under [Teaching resources](teaching.qmd).
+
+## Contact
+
+[ldamoda@emory.edu](mailto:ldamoda@emory.edu)
+[GitHub](https://github.com/ldamodaran)
+
+<!-- Optional extras once you have the links: Google Scholar, ORCID, Bluesky.
+     Add them as [Google Scholar](url) on the line above. -->

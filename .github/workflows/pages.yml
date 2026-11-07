@@ -1,0 +1,89 @@
+# Builds the site and both WebAssembly apps on GitHub's runners, then
+# publishes to GitHub Pages.
+#
+# Nothing in docs/ is committed. That directory is a build artifact: it holds
+# ~82 MB of webR runtime that would otherwise cross your connection on every
+# push and sit in git history forever, growing by another ~40 MB each time
+# shinylive is upgraded. Building here keeps the repo at a few megabytes.
+#
+# The phylogenetics is NOT re-run here -- that needs ape, treedater, seqinr
+# and Bioconductor. Those results are precomputed into the small .rds files
+# under app/data and app-h3n2/data, which ARE committed. Re-run them locally
+# with ./build.sh --data whenever the analysis changes.
+#
+# One-time setup: Settings -> Pages -> Source: "GitHub Actions".
+name: Build and deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: release
+          use-public-rspm: true          # prebuilt Linux binaries, no compiling
+
+      # shinylive caches the webR runtime and the WASM package binaries here.
+      # Caching makes later builds fast and avoids re-downloading ~80 MB.
+      - name: Restore shinylive asset cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/R/shinylive
+          key: shinylive-${{ runner.os }}-${{ hashFiles('app/app.R', 'app-h3n2/app.R') }}
+          restore-keys: shinylive-${{ runner.os }}-
+
+      - name: Install R packages
+        run: |
+          install.packages(c("shinylive", "shiny", "bslib", "ggplot2", "dplyr"))
+          cat("shinylive", as.character(packageVersion("shinylive")), "\n")
+        shell: Rscript {0}
+
+      - name: Build site and apps
+        run: ./build.sh
+
+      - name: Check the build produced what we expect
+        run: |
+          set -e
+          for f in docs/index.html docs/research.html docs/cv.html \
+                   docs/teaching.html \
+                   docs/teaching/norovirus/index.html \
+                   docs/teaching/norovirus/app.json \
+                   docs/teaching/h3n2/index.html \
+                   docs/teaching/h3n2/app.json \
+                   docs/teaching/shinylive/shinylive.js \
+                   docs/site/Lambodhar-Damodaran-CV.pdf; do
+            [ -s "$f" ] || { echo "MISSING OR EMPTY: $f"; exit 1; }
+          done
+          echo "build OK -- $(du -sh docs | cut -f1), $(find docs -type f | wc -l) files"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

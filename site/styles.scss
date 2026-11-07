@@ -1,0 +1,212 @@
+/*-- scss:defaults --*/
+// Matte green palette. Change these six values and the whole site follows.
+$ink:         #2E3A32;   // body text
+$green-dark:  #3F5A47;   // navbar, headings
+$green:       #5A7A62;   // links, accents
+$green-light: #8CA393;   // secondary accents
+$cream:       #F7F8F4;   // panels
+$paper:       #FBFCFA;   // page background
+$rule:        #E2E6DF;   // hairlines
+$muted:       #7C8A80;   // captions
+
+$body-bg:     $paper;
+$body-color:  $ink;
+$primary:     $green-dark;
+$link-color:  $green;
+$border-color: $rule;
+
+$font-family-sans-serif: Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+$font-size-root: 16px;
+$body-line-height: 1.68;
+
+$h1-font-size: 1.85rem;
+$h2-font-size: 1.28rem;
+$h3-font-size: 1.05rem;
+$headings-font-weight: 620;
+$headings-color: $green-dark;
+
+$navbar-bg: $green-dark;
+$navbar-fg: #EDF1EA;
+
+$border-radius: 5px;
+
+/*-- scss:rules --*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+// ---- layout: one narrow, calm column -----------------------------------
+main.content {
+  max-width: 46rem;
+  padding-top: 2.6rem;
+  padding-bottom: 4rem;
+}
+
+// ---- navbar: flat, no shadow -------------------------------------------
+.navbar {
+  border: 0;
+  box-shadow: none;
+  min-height: 3.1rem;
+  .navbar-brand {
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .nav-link {
+    font-size: 0.93rem;
+    opacity: 0.88;
+    &:hover { opacity: 1; }
+  }
+  .nav-link.active {
+    opacity: 1;
+    font-weight: 600;
+    box-shadow: inset 0 -2px 0 #C9D6C5;
+  }
+}
+
+// ---- type --------------------------------------------------------------
+h1 {
+  letter-spacing: -0.015em;
+  margin-bottom: 0.35rem;
+}
+h2 {
+  margin-top: 2.4rem;
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid $rule;
+}
+h3 { margin-top: 1.6rem; }
+
+p { margin-bottom: 1rem; }
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(90, 122, 98, 0.32);
+  &:hover {
+    color: $green-dark;
+    border-bottom-color: $green-dark;
+  }
+}
+.navbar a, .card a, a.btn-soft, .footer a { border-bottom: 0; }
+
+// subtitle under the page title
+.subtitle {
+  color: $muted;
+  font-size: 1.02rem;
+  margin-bottom: 2rem;
+}
+
+// ---- small reusable pieces --------------------------------------------
+.lede {
+  font-size: 1.05rem;
+  color: $ink;
+}
+
+// quiet panel
+.panel {
+  background: $cream;
+  border: 1px solid $rule;
+  border-radius: $border-radius;
+  padding: 1.15rem 1.35rem;
+  margin: 1.4rem 0;
+  p:last-child { margin-bottom: 0; }
+}
+
+// resource card used on the teaching page
+.resource {
+  border: 1px solid $rule;
+  border-left: 3px solid $green-light;
+  border-radius: $border-radius;
+  background: #fff;
+  padding: 1.15rem 1.35rem;
+  margin-bottom: 1.1rem;
+
+  h3 {
+    margin: 0 0 0.35rem 0;
+    font-size: 1.04rem;
+  }
+  .meta {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.055em;
+    color: $muted;
+    margin-bottom: 0.5rem;
+  }
+  p { margin-bottom: 0.75rem; font-size: 0.95rem; }
+  &:hover { border-left-color: $green; }
+}
+
+// flat button
+a.btn-soft {
+  display: inline-block;
+  font-size: 0.87rem;
+  font-weight: 540;
+  padding: 0.34rem 0.8rem;
+  margin-right: 0.4rem;
+  border-radius: 4px;
+  background: $green-dark;
+  color: #F4F7F2 !important;
+  &:hover { background: $green; color: #fff !important; }
+}
+a.btn-ghost {
+  @extend .btn-soft;
+  background: transparent;
+  color: $green-dark !important;
+  border: 1px solid $rule;
+  &:hover { background: $cream; color: $green-dark !important; }
+}
+
+// embedded app frame
+.app-frame {
+  width: 100%;
+  height: 86vh;
+  min-height: 620px;
+  border: 1px solid $rule;
+  border-radius: $border-radius;
+  background: $cream;
+}
+
+// full-bleed: let the app escape the narrow column
+.wide {
+  max-width: 76rem;
+  margin-left: calc(-1 * max(0px, (76rem - 46rem) / 2));
+  @media (max-width: 80rem) {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+.note {
+  font-size: 0.88rem;
+  color: $muted;
+}
+
+// list of links with dates, used for talks / papers
+ul.plain {
+  list-style: none;
+  padding-left: 0;
+  li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid $rule;
+    font-size: 0.95rem;
+    &:last-child { border-bottom: 0; }
+  }
+  .when {
+    color: $muted;
+    font-size: 0.82rem;
+  }
+}
+
+// footer
+.nav-footer {
+  border-top: 1px solid $rule;
+  background: $paper;
+  color: $muted;
+  font-size: 0.85rem;
+  min-height: 3rem;
+}
+
+code {
+  background: $cream;
+  color: $green-dark;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  font-size: 0.88em;
+}

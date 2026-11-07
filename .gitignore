@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+/.quarto/
+prep/*.log
+
+**/*.quarto_ipynb
+
+# build output -- rebuilt by ./build.sh and by CI, never committed
+/docs/

@@ -1,0 +1,120 @@
+---
+title: "Research"
+---
+
+::: {.subtitle}
+Published work
+:::
+
+Peer-reviewed publications, most recent first. **Bold** indicates my
+authorship. Work currently in review or in preparation is listed in the
+[full CV](site/Lambodhar-Damodaran-CV.pdf).
+
+## 2026
+
+::: {.plain}
+- **Ecology and spread of the North American H5N1 epizootic.**<br>
+  **Lambodhar Damodaran**, Anna Jaeger, Louise H. Moncla.
+  *Nature* 649, 432–441. <span class="when">2026</span>
+- **Emergence and epidemiology of dominant variants of human metapneumovirus
+  in the United States between 2016 and 2021.**<br>
+  Lora Lee Pless, **Lambodhar Damodaran**, et al.
+  *mBio* 17:e02619-25. <span class="when">2026</span>
+- **Alignment-free prediction of cross-reactivity in influenza A (H3N2)
+  anticipates antigenic drift.**<br>
+  Alpha Forna, **Lambodhar Damodaran**, et al.
+  *PLOS Computational Biology* 22(8):e1014628. <span class="when">2026</span>
+- **Genomic epidemiology of dengue virus 2 and 3 reveals repeated
+  introductions and exportations of several lineages in Colombia.**<br>
+  Ricardo Rivero, Vaneza Tique, **Lambodhar Damodaran**, et al.
+  *Cell Reports* 45(1). <span class="when">2026</span>
+:::
+
+## 2025
+
+::: {.plain}
+- **Characterizing spatial epidemiology in a heterogeneous transmission
+  landscape using the spatial transmission count statistic.**<br>
+  Leke Lyu, et al. including **Lambodhar Damodaran**.
+  *Communications Medicine* 5(1):165. <span class="when">2025</span>
+- **The evolution and epidemiology of H3N2 canine influenza virus after
+  20 years in dogs.**<br>
+  Brian R. Wasik, **Lambodhar Damodaran**, et al.
+  *Epidemiology & Infection* 153:e47. <span class="when">2025</span>
+:::
+
+## 2024
+
+::: {.plain}
+- **Sequence-based detection of emerging antigenically novel influenza A
+  viruses.**<br>
+  Alpha Forna, Bodie Weedop, **Lambodhar Damodaran**, et al.
+  *Proceedings of the Royal Society B* 291(2028):20240790.
+  <span class="when">2024</span>
+- **Inferring enterovirus D68 transmission dynamics from the genomic data of
+  two 2022 North American outbreaks.**<br>
+  Martin Grunnill, Alireza Eshaghi, **Lambodhar Damodaran**, et al.
+  *npj Viruses* 2(1):34. <span class="when">2024</span>
+- **Pandemic risk assessment for swine influenza A virus in comparative
+  in vitro and in vivo models.**<br>
+  Ian Padykula, **Lambodhar Damodaran**, et al.
+  *Viruses* 16(4):548. <span class="when">2024</span>
+:::
+
+## 2023
+
+::: {.plain}
+- **Ecogeographic drivers of the spatial spread of highly pathogenic avian
+  influenza outbreaks in Europe and the United States, 2016–early 2022.**<br>
+  Jonathon D. Gass Jr., Nichola J. Hill, **Lambodhar Damodaran**, et al.
+  *International Journal of Environmental Research and Public Health*
+  20(11):6030. <span class="when">2023</span>
+- **Comparing the transmission potential from sequence and surveillance data
+  of 2009 North American influenza pandemic waves.**<br>
+  Venkata R. Duvvuri, Joseph T. Hicks, **Lambodhar Damodaran**, et al.
+  *Infectious Disease Modelling*. <span class="when">2023</span>
+:::
+
+## 2022 and earlier
+
+::: {.plain}
+- **Comparison of the knockdown resistance locus (kdr) in *Anopheles
+  stephensi*, *An. arabiensis*, and *Culex pipiens* s.l. suggests differing
+  mechanisms of pyrethroid resistance in east Ethiopia.**<br>
+  Tamar E. Carter, Araya Gebresilassie, Shantoy Hansel,
+  **Lambodhar Damodaran**, et al.
+  *American Journal of Tropical Medicine and Hygiene*.
+  <span class="when">2022</span>
+- **Methodological synthesis of Bayesian phylodynamics, HIV-TRACE, and GEE:
+  HIV-1 transmission epidemiology in a racially/ethnically diverse Southern
+  U.S. context.**<br>
+  Kayo Fujimoto, Justin Bahl, Joel O. Wertheim, et al. including
+  **Lambodhar Damodaran**. *Scientific Reports*.
+  <span class="when">2021</span>
+- **Insecticide resistance in *Anopheles stephensi* in Somali Region, eastern
+  Ethiopia.**<br>
+  Solomon Yared, Araya Gebressielasie, **Lambodhar Damodaran**, et al.
+  *Malaria Journal* 19(1):1–7. <span class="when">2020</span>
+- **Evolution of endemic and sylvatic lineages of dengue viruses.**<br>
+  **Lambodhar Damodaran**, Adriano de Bernardi Schneider, Shi Chen,
+  Daniel Janies. *Cladistics*. <span class="when">2019</span>
+- **First detection of *Anopheles stephensi* Liston, 1901 (Diptera:
+  Culicidae) in Ethiopia using molecular and morphological approaches.**<br>
+  Tamar E. Carter, Solomon Yared, Araya Gebresilassie, Victoria Bonnell,
+  **Lambodhar Damodaran**, et al. *Acta Tropica* 188:180–186.
+  <span class="when">2018</span>
+- **Glucose-6-phosphate dehydrogenase deficiency (G6PD) genetic variants in
+  malaria patients in southwestern Ethiopia.**<br>
+  Tamar Carter, Daniel Janies, Karen Lopez, Victoria Bonnell,
+  **Lambodhar Damodaran**, et al.
+  *American Journal of Tropical Medicine and Hygiene*.
+  <span class="when">2017</span>
+- **Molecular evolution of Zika virus as it crossed the Pacific to the
+  Americas.**<br>
+  Adriano de Bernardi Schneider, et al. including **Lambodhar Damodaran**.
+  *Cladistics*. <span class="when">2017</span>
+- **Zika virus: medical countermeasure development challenges.**<br>
+  Robert W. Malone, et al. including **Lambodhar Damodaran**.
+  *PLOS Neglected Tropical Diseases* 10(3):e0004530.
+  <span class="when">2016</span>
+:::

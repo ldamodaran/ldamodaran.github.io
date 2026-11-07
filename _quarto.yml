@@ -1,0 +1,41 @@
+project:
+  type: website
+  output-dir: docs
+  # The shinylive app is built separately by build.sh into docs/teaching/norovirus
+  # and must not be touched by the render.
+  resources:
+    - site/data/**
+    - site/*.pdf
+
+website:
+  title: "Lambodhar Damodaran"
+  description: "Viral genomics, within-host evolution, and molecular epidemiology."
+  site-url: "https://ldamodaran.github.io/"
+  favicon: site/favicon.svg
+  navbar:
+    background: primary
+    pinned: false
+    left:
+      - href: index.qmd
+        text: About
+      - href: research.qmd
+        text: Research
+      - href: teaching.qmd
+        text: Teaching resources
+      - href: cv.qmd
+        text: CV
+  page-footer:
+    center: |
+      © 2026 Lambodhar Damodaran
+    border: false
+
+format:
+  html:
+    theme:
+      - cosmo
+      - site/styles.scss
+    toc: false
+    anchor-sections: false
+    link-external-newwindow: true
+    mainfont: Inter
+    smooth-scroll: true

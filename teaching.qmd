@@ -1,0 +1,109 @@
+---
+title: "Teaching resources"
+---
+
+::: {.subtitle}
+Interactive tools for teaching viral evolution
+:::
+
+These are the materials I use in class. Both apps run entirely in your browser
+— nothing to install, no account, and no server to log in to, so a whole class
+can open them at once.
+
+## Apps
+
+::: {.resource}
+### Within-host norovirus evolution
+::: {.meta}
+BIOL 463 · runs in the browser
+:::
+
+Follow a single patient with a prolonged norovirus GII.4 infection across nine
+capsid sequences sampled over 111 days. Browse the alignment, read a
+time-scaled phylogeny, fit the molecular clock, and compute dN/dS between any
+two time points — then compare the within-host rate with the global
+population-level rate for the same variant.
+
+[Open the app](teaching/norovirus/){.btn-soft}
+[Below on this page](#norovirus){.btn-ghost}
+:::
+
+::: {.resource}
+### Molecular epidemiology of H3N2
+::: {.meta}
+BIOL 463 · runs in the browser
+:::
+
+Sixteen years of seasonal influenza: 313 HA sequences from the northern
+hemisphere alongside 1,670 weeks of WHO sentinel surveillance. Explore the case
+curves, the characteristically ladder-like HA phylogeny, the molecular clock,
+and lineages through time — then overlay genetic diversity on the epidemic
+curve.
+
+[Open the app](teaching/h3n2/){.btn-soft}
+[Below on this page](#h3n2){.btn-ghost}
+:::
+
+::: {.panel}
+**First load takes a few seconds** — the page is fetching a small R environment
+into your browser. After that everything is instant, and it keeps working
+offline. Needs a current browser (Chrome, Firefox, Safari or Edge).
+:::
+
+## Within-host norovirus evolution {#norovirus}
+
+::: {.wide}
+<iframe class="app-frame" src="teaching/norovirus/" title="Within-host norovirus evolution app" loading="lazy"></iframe>
+:::
+
+::: {.note}
+Trouble with the embedded version? [Open it in its own tab](teaching/norovirus/).
+:::
+
+## Molecular epidemiology of H3N2 {#h3n2}
+
+::: {.wide}
+<iframe class="app-frame" src="teaching/h3n2/" title="Molecular epidemiology of H3N2 app" loading="lazy"></iframe>
+:::
+
+::: {.note}
+Trouble with the embedded version? [Open it in its own tab](teaching/h3n2/).
+:::
+
+## Data and source
+
+Everything behind both apps is open, so students can rerun the analyses in full
+R and get the same numbers.
+
+::: {.plain}
+- **P33 capsid alignment** — 9 sequences, 1,620 nt, one prolonged infection
+  [[FASTA](site/data/P33_capsid.fasta)]
+- **Sydney 2012 capsid subsample** — 350 sequences sampled worldwide, 2011–2022
+  [[FASTA](site/data/Sydney_2012_capsid_n350.fasta)]
+- **H3N2 HA alignment** — 313 sequences, northern hemisphere, 2010–2026
+  [[FASTA](site/data/H3N2_HA_northern_2010_2026.fasta)]
+- **WHO sentinel surveillance** — weekly influenza counts by hemisphere
+  [[CSV](site/data/WHO-H3N2-global-cases.csv)]
+- **Apps and analysis scripts** — both Shiny apps plus the preparation scripts
+  that do the phylogenetics
+  [[GitHub](https://github.com/ldamodaran/ldamodaran.github.io)]
+:::
+
+::: {.panel}
+**A note on the norovirus dates.** Sampling dates for patient P33 are shifted
+to a placeholder year so that the real calendar dates are not published. The
+intervals between samples — and therefore every rate in the app — are
+unchanged.
+:::
+
+## How I use these in class
+
+::: {.panel}
+Students work through the tabs in order and answer the questions on the final
+tab of each app. Each step is built from the one before it, so the apps are
+designed to be followed start to finish rather than dipped into: the alignment
+motivates the tree, the tree makes a rate measurable, and the rate sets up the
+question of selection. The norovirus app is the within-host case, where
+mutation and selection are observed directly; the H3N2 app is its
+population-level counterpart. The question sets cross-reference each other.
+:::

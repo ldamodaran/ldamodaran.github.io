@@ -1,0 +1,121 @@
+---
+title: "CV"
+---
+
+::: {.subtitle}
+Positions, education, teaching, and service
+:::
+
+[Download CV (PDF)](site/Lambodhar-Damodaran-CV.pdf){.btn-soft}
+
+::: {.note}
+Referees' contact details are omitted from the public copy and are available
+on request.
+:::
+
+## Positions
+
+::: {.plain}
+- **Postdoctoral Fellow** — Katia Koelle Lab, Department of Biology, Emory
+  University <span class="when">2025 – present</span>
+- **Postdoctoral Fellow** — Louise Moncla Lab, Department of Pathobiology,
+  University of Pennsylvania School of Veterinary Medicine
+  <span class="when">2023 – 2025</span>
+- **Graduate Research Assistant** — Justin Bahl Lab, Institute of
+  Bioinformatics, University of Georgia <span class="when">2018 – 2023</span>
+- **Research Intern** — Virology, Surveillance and Diagnostics Branch,
+  Influenza Division, Centers for Disease Control
+  <span class="when">Summer 2021</span>
+- **Undergraduate Researcher** — Janies Lab, UNC Charlotte
+  <span class="when">2015 – 2018</span>
+:::
+
+## Education
+
+::: {.plain}
+- **PhD, Bioinformatics** — University of Georgia, Institute of Bioinformatics
+  <span class="when">2018 – 2023</span><br>
+  <span class="note">Thesis: *Molecular Epidemiology of Contemporary Seasonal
+  Influenza Epidemics*. Advisor: Justin Bahl. NSF-NRT Graduate Research Fellow,
+  Interdisciplinary Disease Ecology Across Scales (IDEAS).</span>
+- **BS, Biology** — University of North Carolina at Charlotte
+  <span class="when">2014 – 2018</span><br>
+  <span class="note">Minors in Bioinformatics and Genomics, and
+  Biotechnology.</span>
+:::
+
+## Teaching
+
+::: {.plain}
+- **BIOL 4242 — Biology of Birds**, lecture, UNC Charlotte
+  <span class="when">Spring 2026</span>
+- **BIOL 463 — Molecular Epidemiology**, lecture, Emory University
+  <span class="when">Fall 2025</span>
+- **Teaching Assistant**, General Biology I & II, Department of Biology,
+  UNC Charlotte <span class="when">2016 – 2018</span>
+:::
+
+### Mentoring and workshops
+
+::: {.plain}
+- **Penn First Exposure to Research in the Biological Sciences (FERBS)**,
+  University of Pennsylvania <span class="when">2024 – 2025</span><br>
+  <span class="note">Mentored students in a program placing first-year
+  students from underrepresented backgrounds in research labs.</span>
+- **International Bioinformatics Workshop on Molecular Epidemiology and
+  Phylodynamics**, Taoyuan, Taiwan <span class="when">September 2019</span><br>
+  <span class="note">Taught Bayesian phylodynamic workflows to public health
+  practitioners. Organised by Johns Hopkins CEIRS, Linkou Chang Gung Memorial
+  Hospital, and Chang Gung University.</span>
+:::
+
+## Honors and awards
+
+::: {.plain}
+- **Fellow-In-Residence**, Verena Institute — NSF Biology Integration
+  Institute, Georgetown University <span class="when">2023 – 2024</span>
+- **NSF-NRT Graduate Research Fellowship**, IDEAS — Odum School of Ecology,
+  University of Georgia <span class="when">2019 – 2022</span>
+- **Charlotte Research Scholar**, UNC Charlotte <span class="when">2017</span>
+- **University Honors Program**, UNC Charlotte
+  <span class="when">2014 – 2018</span>
+:::
+
+## Invited talks
+
+::: {.plain}
+- 33rd International Dynamics and Evolution of Human Viruses, Kelowna BC
+  <span class="when">May 2026</span>
+- Population Biology, Ecology and Evolution lecture series, Emory University
+  <span class="when">October 2025</span>
+- Larry Mays Seminar in Bioinformatics, UNC Charlotte
+  <span class="when">March 2025</span>
+- Phylodynamics for Canadian Public Health, Public Health Ontario /
+  University of Toronto <span class="when">March 2025</span>
+- Computational modeling core meeting, Centers for Excellence in Influenza
+  Research and Response <span class="when">December 2024</span>
+:::
+
+## Skills
+
+**Programming and computing** — R, Python, Java, Bash, Unix; HPC cluster
+systems (SLURM, PBS, LSF); Git; SQL and PostgreSQL
+
+**Genomics** — genome assembly (IRMA, SPAdes, nf-core/viralrecon),
+metagenomics (nf-core/mag), taxonomic classification (Kraken2), GWAS,
+transcriptomics
+
+**Phylogenetics** — maximum likelihood reconstruction (RAxML, IQ-TREE),
+Bayesian reconstruction (BEAST 1 and 2)
+
+**Wet lab** — PCR, RT-qPCR, DNA extraction (FTA blood card, arthropods),
+Sanger sequencing
+
+**Languages** — English, Tamil, Telugu (native); Spanish, French (limited)
+
+## Service
+
+Ad hoc reviewer for *Proceedings of the Royal Society B*, *PLOS Pathogens*,
+*Virus Evolution*, *BMC Microbiology*, *International Journal of Infectious
+Disease*, *npj Viruses*, *Scientific Reports*, *Infectious Diseases of
+Poverty*, *One Health Outlook*, and *Tropical Medicine and Health*.
