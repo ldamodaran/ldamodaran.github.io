@@ -22,6 +22,8 @@ website:
         text: Research
       - href: teaching.qmd
         text: Teaching resources
+      - href: news.qmd
+        text: News
       - href: cv.qmd
         text: CV
   page-footer:

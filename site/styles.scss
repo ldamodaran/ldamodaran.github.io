@@ -210,3 +210,20 @@ code {
   border-radius: 3px;
   font-size: 0.88em;
 }
+
+// News listing rows
+.quarto-listing {
+  .listing-item {
+    border-bottom: 1px solid $rule;
+    padding: 0.9rem 0;
+  }
+  .listing-title {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: $green-dark;
+  }
+  .listing-date, .listing-description {
+    color: $muted;
+    font-size: 0.9rem;
+  }
+}

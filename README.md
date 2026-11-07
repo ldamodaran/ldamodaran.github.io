@@ -8,7 +8,8 @@ GitHub Pages out of `docs/`.
 
 | path | what it is |
 |---|---|
-| `index.qmd`, `research.qmd`, `teaching.qmd`, `cv.qmd` | site pages |
+| `index.qmd`, `research.qmd`, `teaching.qmd`, `news.qmd`, `cv.qmd` | site pages |
+| `posts/` | News entries; copy `_template.qmd` to start one |
 | `site/styles.scss` | the matte-green theme — six color variables at the top |
 | `app/app.R` | Shiny app 1 — within-host norovirus evolution |
 | `app/data/*.rds` | its precomputed inputs (~23 KB) |
@@ -18,6 +19,21 @@ GitHub Pages out of `docs/`.
 | `prep/02_prepare_h3n2.R` | H3N2 phylogenetics → `app-h3n2/data/` |
 | `site/data/` | alignments and case data offered as student downloads |
 | `docs/` | **build output — served by GitHub Pages. Do not edit by hand.** |
+
+## Adding a News post
+
+```bash
+cp posts/_template.qmd posts/my-post-slug.qmd
+```
+
+Set `title`, `description` and `date`, delete the `draft: true` line, then
+`./build.sh --site` and push. Files starting with `_` are ignored by Quarto,
+which is why the template never appears on the site.
+
+Until the first post exists, `quarto render` prints
+`WARN: The listing in 'news.qmd' ... doesn't match any files or folders`.
+That is expected and harmless; it stops once `posts/` has a published entry.
+Remove the "Nothing posted yet" panel from `news.qmd` at that point.
 
 ## Build
 

@@ -55,20 +55,6 @@ on request.
   UNC Charlotte <span class="when">2016 – 2018</span>
 :::
 
-### Mentoring and workshops
-
-::: {.plain}
-- **Penn First Exposure to Research in the Biological Sciences (FERBS)**,
-  University of Pennsylvania <span class="when">2024 – 2025</span><br>
-  <span class="note">Mentored students in a program placing first-year
-  students from underrepresented backgrounds in research labs.</span>
-- **International Bioinformatics Workshop on Molecular Epidemiology and
-  Phylodynamics**, Taoyuan, Taiwan <span class="when">September 2019</span><br>
-  <span class="note">Taught Bayesian phylodynamic workflows to public health
-  practitioners. Organised by Johns Hopkins CEIRS, Linkou Chang Gung Memorial
-  Hospital, and Chang Gung University.</span>
-:::
-
 ## Honors and awards
 
 ::: {.plain}

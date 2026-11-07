@@ -1,0 +1,25 @@
+---
+title: "News"
+listing:
+  id: posts
+  contents: posts
+  sort: "date desc"
+  type: default
+  fields: [date, title, description]
+  date-format: "MMMM D, YYYY"
+  feed: true
+  filter-ui: false
+  sort-ui: false
+---
+
+::: {.subtitle}
+Writing, talks, and lab news
+:::
+
+::: {#posts}
+:::
+
+<!-- Delete this panel once the first post is published. -->
+::: {.panel}
+Nothing posted yet. New entries will appear here.
+:::

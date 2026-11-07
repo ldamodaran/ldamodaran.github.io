@@ -1,0 +1,32 @@
+---
+title: "Title of the post"
+description: "One sentence that appears under the title in the News listing."
+author: "Lambodhar Damodaran"
+date: "2026-01-01"
+draft: true          # delete this line to publish
+categories: [research]
+---
+
+Write the post here in Markdown.
+
+To publish a new entry:
+
+1. Copy this file to `posts/a-short-slug.qmd`
+2. Set the `title`, `description` and `date`
+3. Delete the `draft: true` line
+4. `./build.sh --site`, then commit and push
+
+R code runs in a post if you want figures. Quarto executes the chunk and
+embeds the result:
+
+```{r}
+#| echo: false
+#| eval: false
+#| fig-height: 3
+library(ggplot2)
+ggplot(mtcars, aes(wt, mpg)) + geom_point() + theme_minimal()
+```
+
+Set `eval: true` to actually run it. Note that posts are rendered by CI, which
+has only `shiny`, `bslib`, `ggplot2` and `dplyr` installed -- if a post needs
+anything heavier, render the figure locally and commit the image instead.
