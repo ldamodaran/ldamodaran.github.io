@@ -1,5 +1,5 @@
 # ==========================================================================
-# 01_prepare_data.R  --  BIO463 within-host evolution app
+# 01_prepare_data.R  --  BIO241 within-host evolution app
 #
 # Runs ONCE on your laptop (full R, all packages). Does every heavy or
 # package-dependent step from Norovirus-Prolonged-Infection.Rmd and writes

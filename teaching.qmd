@@ -15,7 +15,7 @@ can open them at once.
 ::: {.resource}
 ### Within-host norovirus evolution
 ::: {.meta}
-BIOL 463 · runs in the browser
+BIO 241 · runs in the browser
 :::
 
 Follow a single patient with a prolonged norovirus GII.4 infection across nine

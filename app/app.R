@@ -1,5 +1,5 @@
 # ==========================================================================
-# BIO463 - Within-Host Norovirus Evolution
+# BIO241 - Within-Host Norovirus Evolution
 # Interactive companion to Norovirus-Prolonged-Infection.Rmd
 #
 # All phylogenetics (NJ trees, treedater molecular clock, seqinr dN/dS) is
@@ -397,7 +397,7 @@ ui <- page_navbar(
   ),
 
   nav_spacer(),
-  nav_item(tags$a("BIO463", href = "../", class = "nav-link",
+  nav_item(tags$a("BIO241", href = "../", class = "nav-link",
                   style = "opacity:.85;"))
 )
 
